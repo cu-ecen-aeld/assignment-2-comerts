@@ -1,0 +1,4 @@
+Using built-in specs.
+COLLECT_GCC=aarch64-linux-gnu-gcc
+COLLECT_LTO_WRAPPER=/home/comert/x-tools/cross-pi-gcc-14.2.0-64/bin/../libexec/gcc/aarch64-linux-gnu/14.2.0/lto-wrapper
+/home/comert/x-tools/cross-pi-gcc-14.2.0-64/bin/../aarch64-linux-gnu/libc

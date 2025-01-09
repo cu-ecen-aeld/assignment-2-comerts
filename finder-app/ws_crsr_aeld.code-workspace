@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../assignment-1-comerts"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"errno.h": "c",
+			"errno-base.h": "c"
+		}
+	}
+}
