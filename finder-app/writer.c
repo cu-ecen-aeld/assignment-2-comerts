@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     {
         fprintf(stderr, "Usage: %s <filename> %s <string>\r\n", argv[0], argv[1]);
         syslog(LOG_ERR, "Usage: %s <filename> %s <string>", argv[0], argv[1]);
+        closelog();
         return EPERM;
     }
 
@@ -21,6 +22,7 @@ int main(int argc, char *argv[])
     {
         perror("fopen");
         syslog(LOG_ERR, "fopen: %m");
+        closelog();
         return EPERM;
     }
 
@@ -30,6 +32,7 @@ int main(int argc, char *argv[])
         perror("write");
         syslog(LOG_ERR, "write: %m");
         fclose(file);
+        closelog();
         return EPERM;
     }
     else
